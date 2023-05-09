@@ -1,0 +1,21 @@
+<nav class="navbar navbar-fixed-top navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+        <img src="/images/briefs-logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        briefs
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+          <a class="nav-link" href="/">Home</a>
+          <a class="nav-link" href="/tags/new"><i class="fa fa-plus"></i>&nbsp;Tags</a>
+          <a class="nav-link" href="/videos/new"><i class="fa fa-plus"></i>&nbsp;Upload</a>
+          <a class="nav-link" href="/login"><i class="fa fa-user"></i>&nbsp;Login</a>
+          <a class="nav-link" href="/loginHistory">{{session.user.email}}</a>
+        </div>
+      </div>
+    </div>
+  </nav>

@@ -1,0 +1,23 @@
+{{#each data}}
+<div class="card">
+  <video controls>
+    <source src="{{videoFile}}" type="video/mp4">
+  </video>
+  <div class="card-body">
+    <h5 class="card-title">{{#strong}}{{title}}{{/strong}}</h5>
+    <p class="card-text">{{#formatDate date}}{{/formatDate}}</p>
+    <p class="card-text">{{description}}</p>
+    <a href="/videos/tag/{{tag}}" class="btn btn-dark">{{tag}}</a>
+    <a href="/videos/likes/{{id}}" class="btn btn-primary">{{likes}} Likes</a>
+    <a href="/videos/{{id}}" class="btn btn-success">More Info</a>
+    <a href="/videos/delete/{{id}}" class="btn btn-danger">Delete</a>
+
+  </div>
+</div>
+{{else}}
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">NO DATA</h5>
+  </div>
+</div>
+{{/each}}

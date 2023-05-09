@@ -1,0 +1,27 @@
+<div class="container">
+                                <h4>Tags</h4>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Tag</th>
+      <th scope="col">Delete</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    {{#each data}}
+    <tr>
+      <th scope="row">{{id}}</th>
+      <td>{{tag}}</td>
+      <td><a href="/tags/delete/{{id}}" class="btn btn-danger">Delete</a></td>
+    </tr>
+    {{else}}
+    <tr>
+        <td colspan="2">No Data Available</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+</div>

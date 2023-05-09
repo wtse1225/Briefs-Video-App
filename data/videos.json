@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "title": "House emerges",
+        "description": "A house is built in 3 seconds",
+        "date": "2023-02-01",
+        "length": 3,
+        "likes": 1,
+        "comments": ["didn't know took that long!"],
+        "videoFile": "/videos/house.mp4",
+        "tag": 1
+    }
+
+]
